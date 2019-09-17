@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class UnsplashApi
 
@@ -8,7 +8,7 @@ class UnsplashApi
 
   def make_call
     response = conn.get("/search/photos?query=#{@location}")
-    JSON.parse(response.body) 
+    JSON.parse(response.body)
   end
 
   private

@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class Gif
   attr_reader :id, :time, :summary, :url
