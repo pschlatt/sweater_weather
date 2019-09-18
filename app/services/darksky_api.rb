@@ -12,10 +12,8 @@ class DarkskyApi
   end
 
   def make_time_call
-    binding.pry
     response = conn.get("/forecast/#{ENV['DARKSKY_KEY']}/#{@lat},#{@long},#{@time}?exclude=hourly,daily,flags")
     JSON.parse(response.body)
-    binding.pry
   end
 
   private
