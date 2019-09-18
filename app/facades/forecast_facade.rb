@@ -1,4 +1,4 @@
-class ForecastFacade 
+class ForecastFacade
   def initialize(location)
     @location = location
   end
@@ -45,5 +45,6 @@ private
 
   def grab_background
     UnsplashApi.new(@location).make_call
+    #unsplashapi
   end
 end
