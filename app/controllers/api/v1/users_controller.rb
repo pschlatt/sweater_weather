@@ -5,8 +5,7 @@ class Api::V1::UsersController < ApplicationController
     pass = user_params[:password]
     pass_conf = user_params[:password_confirmation]
     @user = User.new(email: email)
-    @user.password = params[:password]
-
+    @user.password = pass
     if (pass == pass_conf) && @user.save!
       render status: :created, json: {api_key: @user.api_key}
     elsif (pass != pass_conf)
