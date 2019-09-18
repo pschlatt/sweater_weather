@@ -21,8 +21,9 @@ describe 'user creation' do
     body = {email: "paul.h.schlattmann@gmail.com",
             password: "123",
             password_confirmation: "1234"}
+
     post '/api/v1/users', params: body
     expect(response.status).to eq 400
-    expect(response.body).to have_content("Password and Password Confirmation need to be identical.")
+    expect(response.body).to eq("{\"code\":3000,\"message\":\"Password and Password Confirmation need to be identical.\"}")
   end
 end

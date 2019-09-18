@@ -13,7 +13,7 @@ class Api::V1::RoadTripController < ApplicationController
         render json: RoadtripSerializer.new(roadtrip)
       end
     else
-      render json: {error: '(Unauthorized.)'}, status: 401
+      render json: {error: '(Unauthorized)'}, status: 401
     end
   end
 
