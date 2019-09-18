@@ -1,9 +1,11 @@
 class RoadTrip
-
-  def initialize(forecast_data, direction_data)
-    @temperature = forecast_data[]
-    @summary = forecast_data[]
-    @duration = direction_data
+  attr_reader :id, :temperature, :summary, :duration
+  @@id = 0
+  def initialize(forecast_data, duration)
+    @@id += 1
+    @id = 0
+    @temperature = forecast_data[:temperature]
+    @summary = forecast_data[:summary]
+    @duration = duration
   end
-
 end

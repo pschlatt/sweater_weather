@@ -9,7 +9,8 @@ class Api::V1::RoadTripController < ApplicationController
     key = road_trip_params[:api_key]
     user = User.where("users.api_key = ?", key)
     if user
-      render local: {facade: RoadTripFacade.new(origin, dest).road_trip_duration}
+      roadtrip = RoadTripFacade.new(origin, dest).build_road_trip
+      render json: RoadtripSerializer.new(roadtrip)
     end
   end
 
