@@ -7,7 +7,7 @@ class UnsplashApi
   end
 
   def make_call
-    response = conn.get("/search/photos?query=#{@location},aerial")
+    response = conn.get("/search/photos?query=#{@location}")
     JSON.parse(response.body)
   end
 
