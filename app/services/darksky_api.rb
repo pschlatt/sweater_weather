@@ -1,12 +1,18 @@
 class DarkskyApi
 
-  def initialize(lat, long)
+  def initialize(lat, long, time = "")
     @lat = lat
     @long = long
+    @time = time
   end
 
   def make_call
     response = conn.get("/forecast/#{ENV['DARKSKY_KEY']}/#{@lat},#{@long}")
+    JSON.parse(response.body)
+  end
+
+  def make_time_call
+    response = conn.get("/forecast/#{ENV['DARKSKY_KEY']}/#{@lat},#{@long},#{@time}?exclude=hourly,daily,flags")
     JSON.parse(response.body)
   end
 
