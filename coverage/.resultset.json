@@ -198,6 +198,56 @@
         null,
         null
       ],
+      "/Users/paul/turing/mod3/sweater_weather/spec/features/user_can_see_giphy_recturn_spec.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/paul/turing/mod3/sweater_weather/spec/models/user_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/paul/turing/mod3/sweater_weather/app/models/user.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/paul/turing/mod3/sweater_weather/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/paul/turing/mod3/sweater_weather/spec/requests/api/v1/new_user_spec.rb": [
         1,
         null,
@@ -473,23 +523,8 @@
         null,
         null,
         null
-      ],
-      "/Users/paul/turing/mod3/sweater_weather/app/models/user.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/paul/turing/mod3/sweater_weather/app/models/application_record.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1568822211
+    "timestamp": 1568827398
   }
 }
