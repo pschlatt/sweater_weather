@@ -1,7 +1,7 @@
 class Api::V1::UsersController < ApplicationController
 
   def create
-    email = user_params[:email]
+    email = user_params[:email].downcase
     pass = user_params[:password]
     pass_conf = user_params[:password_confirmation]
     @user = User.new(email: email)
